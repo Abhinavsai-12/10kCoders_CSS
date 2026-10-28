@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            width: 100%;
+            background-color: rgb(247, 248, 248);
+            color: rgb(11, 11, 11);
+            height: 60px;
+        }
+        a{
+            color: rgb(10, 10, 10);
+            text-decoration: none;
+            padding: 20px;
+        }
+        a:hover{
+            background-color: green;
+            color: white;
+            padding: 10px;;
+        }
+
+        body{
+    background-color: #131729;
+}
+
+.w3s{
+    background-color: rgb(248, 253, 253);
+    padding: 2px;
+    width: 100%;
+}
+
+
+.box1{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(137, 192, 170);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box1>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.box2{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(248, 240, 12);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box2>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.box3{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(192, 143, 181);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box3>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.box4{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(192, 143, 181);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box4>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.box5{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(206, 199, 205);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box5>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.box6{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(162, 198, 172);
+    margin: 20px 15px 20px 50px;
+    border-radius: 10px;
+    height: 225px;
+    width: 45%;
+}
+.box6>span{
+    border:5px solid black;
+    background-color: rgb(4, 4, 30);
+    color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.box7{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    background-color: rgb(211, 147, 158);
+    margin: 70px 50px 20px 50px;
+    border-radius: 10px;
+    height: 120px;
+    width:45%;
+}
+
+.box8{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    background-color: rgb(219, 219, 115);
+    margin: 70px 30px 20px 15px;
+    border-radius: 10px;
+    height: 120px;
+    width:45%;
+}
+
+
+
+.sb1{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(162, 162, 56);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb2{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(208, 208, 136);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+.sb3{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(185, 120, 120);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb4{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(193, 161, 211);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+
+
+
+.sb5{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(125, 123, 123);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+.sb6{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(118, 164, 124);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+.sb7{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(77, 166, 187);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb8{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(210, 166, 173);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+
+
+.sb9{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(197, 120, 93);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb10{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(229, 140, 229);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb11{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #b3da79;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb12{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rosybrown;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+
+
+
+.sb13{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(212, 142, 172);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb14{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(173, 173, 224);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb15{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(220, 80, 126);
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb16{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #34568B;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+
+
+
+.sb17{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: skyblue;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb18{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: slateblue;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb19{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: salmon;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb20{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: slategray;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+
+
+
+.sb21{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #F7CAC9;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb22{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: seagreen;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb23{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: sandybrown;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+.sb24{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: sienna;
+    margin: 50px 20px 30px 50px;
+    border-radius: 10px;
+    height: 100px;
+    width: 20%;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <table cellpadding="10px" cellspacing="10px">
+            <tr>
+                <th><img src="w3.png" height="30px"></th>
+                <th><a href="" style="font-size: 22px;">HTML</a></th>
+                <th><a href="" style="font-size: 22px;">CSS</a></th>
+                <th><a href="" style="font-size: 22px;">JS</a></th>
+                <th><a href="" style="font-size: 22px;">React JS</a></th>
+                <th><a href="" style="font-size: 22px;">Angular JS</a></th>
+                <th><a href="" style="font-size: 22px;">Jquery</a></th>
+                <th><a href="" style="font-size: 22px;">Node Js</a></th>
+                <th><a href="" style="font-size: 22px;">Python</a></th>
+                <th><a href="" style="font-size: 22px;">Java</a></th>
+                <th><a href="" style="font-size: 22px;">C</a></th>
+                <th><a href="" style="font-size: 22px;">C++</a></th>
+            </tr>
+        </table>
+        </div>
+
+    <div>
+
+    <span class="box1">
+        <h1><b>HTML</b></h1>
+        <p>A Language for building web pages</p>
+        <span>Learn HTML</span>
+
+    </span>
+
+    <span class="box2">
+        <h1><b>CSS</b></h1>
+        <p>The language for styling web pages</p>
+        <span>Learn CSS</span>
+    </span>
+
+    <span class="box3">
+        <h1><b>PHP</b></h1>
+        <p>A Web Server Programming Language</p>
+        <span>Learn PHP</span>
+    </span>
+
+    <span class="box4">
+        <h1><b>jQuery</b></h1>
+        <p>A JS library for developing web pages</p>
+        <span>Learn jQuery</span>
+    </span>
+
+
+    <span class="box5">
+        <h1><b>Java</b></h1>
+        <p>A programing language</p>
+        <span>Learn Java</span>
+    </span>
+
+    <span class="box6">
+        <h1><b>jQuery</b></h1>
+        <p>A programing language</p>
+        <span>Learn C++</span>
+    </span>
+
+
+    <span class="box7">
+        <h1>C</h1>
+    </span>
+
+    <span class="box8">
+        <h1>C#</h1>
+    </span>
+
+    <span class="sb1">
+        <h1>R</h1>
+    </span>
+
+    <span class="sb2">
+        <h1>Kotlin</h1>
+    </span>
+
+    <span class="sb3">
+        <h1>Node.js</h1>
+    </span>
+
+    <span class="sb4">
+        <h1>React</h1>
+    </span>
+
+    <span class="sb5">
+        <h1>JSON</h1>
+    </span>
+
+    <span class="sb6">
+        <h1>Vue</h1>
+    </span>
+
+    <span class="sb7">
+        <h1>MySQL</h1>
+    </span>
+
+    <span class="sb8">
+        <h1>XML</h1>
+    </span>
+
+    <span class="sb9">
+        <h1>Sass</h1>
+    </span>
+
+    <span class="sb10">
+        <h1>Icons</h1>
+    </span>
+
+    <span class="sb11">
+        <h1>RWD</h1>
+    </span>
+
+    <span class="sb12">
+        <h1>Graphics</h1>
+    </span>
+
+    <span class="sb13">
+        <h1>SVG</h1>
+    </span>
+
+    <span class="sb14">
+        <h1>Canvas</h1>
+    </span>
+
+    <span class="sb15">
+        <h1>Raspberry pi</h1>
+    </span>
+
+    <span class="sb16">
+        <h1>Cyber Security</h1>
+    </span>
+
+    <span class="sb17">
+        <h1>Colors</h1>
+    </span>
+
+    <span class="sb18">
+        <h1>Git</h1>
+    </span>
+
+    <span class="sb19">
+        <h1>Matplotlib</h1>
+    </span>
+
+    <span class="sb20">
+        <h1>NumPy</h1>
+    </span>
+
+    <span class="sb21">
+        <h1>Pandas</h1>
+    </span>
+
+    <span class="sb22">
+        <h1>SciPy</h1>
+    </span>
+
+    <span class="sb23">
+        <h1>ASP</h1>
+    </span>
+
+    <span class="sb24">
+        <h1>AngularJS</h1>
+    </span>
+</div>
+
+
+</body>
+</html>

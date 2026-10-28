@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            margin-top: 100px;
+            
+        }
+        .button button{
+            padding: 10px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: aqua;
+            
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+            margin-top: 100px;
+            transition: all 2s;
+        }
+
+        .translate:hover~img{
+            transform: translate(100px, 50px);
+        }
+        .scale:hover~img{
+            transform:scale(1.5, 1.5);
+        }
+        .rotate:hover~img{
+            transform: rotate(360deg);
+        }
+        .skew:hover~img{
+            transform:skew(15deg, 10deg);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+        <div class="button">
+            <button class="translate">translate</button>
+            <button class="scale">scale</button>
+            <button class="rotate">rotate</button>
+            <button class="skew">skew</button>
+            <br>
+            <img src="Residential Architects.jpeg" alt="">
+        </div>
+</body>
+</html>

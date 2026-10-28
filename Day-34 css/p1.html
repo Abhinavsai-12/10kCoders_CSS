@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            width: 100vw;
+            background-color: blanchedalmond;
+            padding: 20px;
+
+        }
+        .container{
+            border: 1px;
+            width: 150px;
+            display: none;
+            border: 1px solid black;
+            background-color: blanchedalmond;
+        }
+        .a1:hover{
+            border: 2px;
+            width: 150px;
+            background-color: rgb(249, 215, 165);
+        }
+        .a2:hover{
+            border: 2px;
+            width: 150px;
+            background-color: rgb(249, 215, 165);
+        }
+        .a3:hover{
+            border: 2px;
+            width: 150px;
+            background-color: rgb(249, 215, 165);
+        }
+
+        button:focus~.container{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button>Click</button>
+        <div class="container">
+            <div class="a1">Box1</div>
+            <div class="a2">Box2</div>
+            <div class="a3">Box3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

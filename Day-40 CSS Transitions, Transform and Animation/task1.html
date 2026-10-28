@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            flex-direction: column;
+        }
+        .bounce{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bounce1{
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: bounce1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bounce1{
+            from{
+                background-color: orange;
+                transform: translate(0px);
+            }
+            to{
+                background-color: orange;
+                transform: translate(0px, -60px);
+
+            }
+        }
+        .bounce2{
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: bounce2;
+            animation-duration: 1s;
+            animation-delay: 0.25s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bounce2{
+            from{
+                background-color: orange;
+                transform: translate(0px);
+            }
+            to{
+                background-color: orange;
+                transform: translate(0px, -60px);
+
+            }
+        }
+        .bounce3{
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: bounce1;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bounce3{
+            from{
+                background-color: orange;
+                transform: translate(0px);
+            }
+            to{
+                background-color: orange;
+                transform: translate(0px, -60px);
+
+            }
+        }
+
+
+
+
+        .load{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .load1{
+            background-color: rgb(47, 138, 48);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: load1;
+            animation-duration: 0.75s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes load1{
+            from{
+                background-color: rgb(47, 138, 48);
+                transform: scale(1, 1);
+            }
+            to{
+                background-color: rgb(22, 63, 23);
+                transform: scale(1.15, 1.15 );
+            }
+        }
+
+        .load2{
+            background-color: rgb(47, 138, 48);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: load1;
+            animation-duration: 0.75s;
+            animation-delay: 0.25s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes load2{
+            from{
+                background-color: rgb(79, 235, 82);
+                transform: scale(1, 1);
+            }
+            to{
+                background-color: rgb(22, 63, 23);
+                transform: scale(1.15, 1.15 );
+
+            }
+        }
+
+
+        .load3{
+            background-color: rgb(77, 233, 79);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin: 10px;
+            animation-name: load1;
+            animation-duration: 0.75s;
+            animation-delay:0.5;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes load3{
+            from{
+                background-color: rgb(84, 230, 86);
+                transform: scale(1, 1);
+            }
+            to{
+                background-color: rgb(22, 63, 23);
+                transform: scale(1.15, 1.15 );
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bounce">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+
+        <div class="load">
+            <div class="load1"></div>
+            <div class="load2"></div>
+            <div class="load3"></div>
+        </div>
+
+    </div>
+</body>
+</html>
