@@ -1,6 +1,6 @@
 # 10kCoders CSS Practice
 
-## About the Project
+## About this Repository
 This repository contains CSS practice tasks completed as part of the 10kCoders training program. It includes different styling exercises and web page designs created to learn and practice CSS concepts.
 
 ## Technologies Used
