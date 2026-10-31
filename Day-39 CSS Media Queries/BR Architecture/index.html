@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+         .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px; 
+            margin: 0px;
+            height: 10vh;
+            position: relative;
+        }
+        .nav1,.brarc{
+            font-size: 24px;
+            font-family: "Josefin Slab", serif;
+            color: rgb(76, 72, 72);
+            text-decoration: none;
+            align-items: center;
+            margin: 0px;
+        }
+        .brarc{
+            font-weight: 100;
+            font-family: Verdana, sans-serif;
+        }
+        .nav2{
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+            margin: 0px;
+        }
+        .about{
+            text-decoration: none;
+            color: rgb(76, 72, 72);
+            margin-right: 10px;
+            margin: 0px;
+        }
+        .menunav{
+            text-decoration: none;
+            color: rgb(76, 72, 72);
+            margin: 0px;
+            margin-right: 10px;
+        }
+        .contactnav{
+            text-decoration: none;
+            color: rgb(76, 72, 72);
+            margin: 0px;
+            margin-right: 25px;
+        }
+        .nav3{
+            display: none;
+        }
+
+        .home{
+            background-image: url(architect.jpg);
+            margin: 0px;
+            padding: 0px;
+            /* bg */
+            background-repeat: no-repeat;
+            width:98%;
+            height:100vh;
+        }
+        .br{
+            text-align: center;
+            align-items: center;
+            padding: 25%;
+            
+        }
+
+        .sample{
+            margin-top: 20px;
+            height: 100vh;
+            width: 98%;
+            /* display: flex; */
+            position: relative;
+        }
+
+        .projects{
+            margin-top: 8vh;
+            margin-left: 60px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 200;
+        }
+
+        .samp1{
+            margin-top: 12vh;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .samp2{
+            margin-top: 12vh;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .sum1,.sum2,.sum3,.sum4{
+            width: 355px;
+            height: 200px;
+            padding-left: 60px;
+            z-index: -3;
+        }
+        
+        .summ1,.summ2,.summ3,.summ4{
+            padding: 10px;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            position: absolute;
+            z-index: 3;
+            margin-left: 60px;
+            top: 0;
+        }
+         
+        .aboutsec{
+            height:100vh;
+            width:98%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            padding: 50px;
+        }
+        .abouth{
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+        }
+        .aboutp{
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 25px;
+            text-align: justify;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        .cards{
+            height: 70%;
+            display: flex;
+        }
+
+        .card1,.card2,.card3,.card4{
+            width: 21%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            margin-left: 45px;
+        }
+
+        .card1 img{
+            height: 70%;
+        }
+        .card2 img{
+            height: 70%;
+        }
+        .card3 img{
+            height: 70%;
+        }
+        .card4 img{
+            height: 70%;
+        }
+        .card1a{
+            padding:3px;
+            padding-left: 5px;
+        }
+        .card1b{
+            padding: 2px;
+            color: rgb(104, 98, 98);
+            font-size: 20px;
+            padding-left: 5px;
+            /* text-align:justify; */
+        }
+        .card1c{
+            padding: 2px;
+            font-size: 18px;
+            margin-top: 5px;
+            padding-left: 5px;
+            /* text-align: justify; */
+
+        }
+        .card1d{
+            width: 98%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+        }
+
+        .contactsec{
+            width: 95%;
+            height: 70vh;
+            margin-left:4.5vw;
+            margin-top: 6vh;
+        }
+
+        .name{
+        border: none;
+        border : 1px solid rgba(141, 144, 149, 0.249);
+        width: 75%;
+        height: 7.5vh;
+        margin-top: 15px;
+      }
+      .mail{
+        border: none;
+        border : 1px solid rgba(141, 144, 149, 0.249);
+        width: 75%;
+        height: 7.5vh;
+        margin-top: 15px;
+      }
+      .sub{ 
+        border: none;
+        border : 1px solid rgba(141, 144, 149, 0.249);
+        width: 75%;
+        height: 7.5vh;
+        margin-top: 15px;
+      }
+      .ct{ 
+        border: none;
+        border: 1px solid rgba(141, 144, 149, 0.249);
+        width: 75%;
+        height: 7.5vh;
+        margin-top: 15px;
+      }
+      .sm{
+        margin-top: 16px;
+        padding: 20px;
+        font-size: 16px;
+        background-color: black;
+        color: white;
+      }
+
+      .container h1{
+        /* margin: 5px; */
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+      }
+
+      .mapping{
+        margin: 5px 5px 0px 5px;
+        padding: 5px 5px 0px 5px;
+        width: 90vw;
+      }
+      
+      .foot{
+        height: 10vh;
+        background-color: black;
+        color: white;
+        align-content: center;
+        text-align: center; 
+      }
+
+      .foot a{
+        color: white; 
+      }
+         
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="nav">
+            <div class="nav1">
+                <a href="#home" class="brarc"><b>BR</b> Architecture</a>
+            </div>
+            <div class="nav2">
+                <a href="#about"  class="about">About</a>
+                <a href="#menu" class="menunav">Projects</a>
+                <a href="#contact" class="contactnav">contact</a>
+            </div>
+            <div class="nav3">
+                <a href="" class="aimg"><img src="menu.png" alt="" class="mimg"></a>
+                <div class="nav31">
+                <a href="#about"  class="a1">About</a>
+                <br>
+                <a href="#menu" class="a2">Menu</a>
+                <br>
+                <a href="#contact" class="a3">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <h1 class="br">
+                <mark style="background-color: aliceblue; padding: 20px;">BR</mark> 
+                <mark style="background-color: black; color: aliceblue; padding: 20px;">Architecture</mark>
+            </h1>
+        </div>
+
+        <br>
+
+
+
+        <div class="sample">
+            <h1 class="projects">Projects</h1>
+            <div class="samp1">
+
+                <div>
+                    <img src="summer.jpg" alt="" class="sum1">
+                    <p class="summ1">Summer House</p>
+                </div>
+            
+                <div>
+                    <img src="brick.jpg" alt="" class="sum2">
+                    <p class="summ2">Brick House</p>
+                </div>
+                
+                <div>
+                    <img src="renovated.jpg" alt="" class="sum3">
+                    <p class="summ3">Renovated House</p>
+                </div>
+                
+                <div>
+                    <img src="barn.jpg" alt="" class="sum4">
+                    <p class="summ4">Barn House</p>
+                </div>
+            </div>
+
+
+
+            <div class="samp2">
+                <div>
+                    <img src="brick.jpg" alt="" class="sum2">
+                    <p class="summ2">Brick House</p>
+                </div>
+
+                <div>
+                    <img src="summer.jpg" alt="" class="sum1">
+                    <p class="summ1">Summer House</p>
+                </div>
+            
+                
+                <div>
+                    <img src="barn.jpg" alt="" class="sum4">
+                    <p class="summ4">Barn House</p>
+                </div>
+                
+                <div>
+                    <img src="renovated.jpg" alt="" class="sum3">
+                    <p class="summ3">Renovated House</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="aboutsec">
+
+            <h1 class="abouth">About</h1>
+            <p class="aboutp">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="cards">
+                <div class="card1">
+                    <img src="ceo.jpg" alt="">
+                    <h1 class="card1a">John Doe</h1>
+                    <h4 class="card1b">CEO & Founder</h4>
+                    <p class="card1c">Phasellus eget enim eu lectus faucibus vestibulum. 
+                    Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <button class="card1d">Contact</button>
+                </div>
+
+
+                <div class="card2">
+                    <img src="architectt.jpg" alt="">
+                    <h1 class="card1a">Jane Doe</h1>
+                    <h4 class="card1b">Architect</h4>
+                    <p class="card1c">Phasellus eget enim eu lectus faucibus vestibulum. 
+                    Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <button class="card1d">Contact</button>
+                </div>
+
+
+                <div class="card3">
+                    <img src="architectt2.jpg" alt="">
+                    <h1 class="card1a">Jane Doe</h1>
+                    <h4 class="card1b">Architect</h4>
+                    <p class="card1c">Phasellus eget enim eu lectus faucibus vestibulum. 
+                    Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <button class="card1d">Contact</button>
+                </div>
+
+
+                <div class="card4">
+                    <img src="architectt3.jpg" alt="">
+                    <h1 class="card1a">Jane Doe</h1>
+                    <h4 class="card1b">Architect</h4>
+                    <p class="card1c">Phasellus eget enim eu lectus faucibus vestibulum. 
+                    Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <button class="card1d">Contact</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contactsec">
+            <h1>Contact</h1>
+            <p>Lets get in touch and talk about your next project.</p>
+            
+            <form action="" method="post">
+                <input type="text" placeholder="Name"   class="name">
+                <input type="email" placeholder="Enter Your Email"   class="mail">
+                <input type="text" placeholder="Subject"   class="sub">
+                <input type="text"  placeholder="Comment" class="ct">
+                <br>
+                <button type="submit" class="sm">Send Message</button>
+                <br>
+                <br>
+            </form>
+        </div>   
+
+
+
+        <div class="mapping">
+            <img src="map.jpg" alt="">
+        </div>
+
+
+        <div class="foot">
+            <p class="abhi">Powered by <a class="ab" href="https://www.linkedin.com/in/abhinavsaivannam/">Abhinav Sai</a></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
